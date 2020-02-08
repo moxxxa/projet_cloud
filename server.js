@@ -328,6 +328,7 @@ app.post('/file-upload', (request, response) => {
           const url = blobService.getUrl(request.session.user.id+'-'+request.session.user.last_name, request.session.user.id+'_'+file.name);
           let content = {
             fileName: file.name,
+            containerName: request.session.user.id+'-'+request.session.user.last_name,
             userId: request.session.user.id,
             date: dateTime,
             url: url
