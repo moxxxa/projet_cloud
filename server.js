@@ -291,14 +291,6 @@ app.get('/files', (request, response) => {
     });
 });
 
-app.post('/delete-file', async function (request, response)  {
-  let FileManager = require('./models/FileManager');
-  FileManager.deleteFile(request, function (result) {
-    console.log('result = ', result);
-  });
-  await executeDelete(request.session.user.id+'-'+request.session.user.last_name, request.session.user.id+'_'+request.body.fileName.fileName);
-});
-
 //if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config({path:'./.env'});
 //}
@@ -393,25 +385,6 @@ const downloadBlob = async (containerName, blobName) => {
     });
 };
 
-const deleteBlob = async (containerName, blobName) => {
-    return new Promise((resolve, reject) => {
-        blobService.deleteBlobIfExists(containerName, blobName, err => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve({ message: `Block blob '${blobName}' deleted` });
-            }
-        });
-    });
-};
-
-
-async function executeDelete(containerName, fileName) {
-  console.log('trying to delete * ', fileName, ' * from container ', containerName);
-  let response;
-  response = await deleteBlob(containerName, fileName);
-  console.log(response.message);
-}
 
 async function executeUpload(file, containerName) {
     console.log('trying to upload * ', file, ' * to container ', containerName);
