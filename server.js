@@ -32,8 +32,6 @@ app.use(session({
 //pour les messages flash
 app.use(require('./middlewares/flash'));
 
-//pour les redirections de sécurité, lorsque le serveur subit un modification
-//alors redirection automatique vers la page de login
 
 
 //les gets
