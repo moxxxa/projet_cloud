@@ -326,23 +326,10 @@ app.post('/file-upload', (request, response) => {
             date: dateTime,
             url: url
           }
-          // UploadFile.update(request, content, function () {
-        //     console.log('fileName is added to the dataBase');
-        //   });
-        // on upload en server-less :
-        fetch('https://azure-functions-project-cloudxx.azurewebsites.net/api/upload-file', {
-		            method: 'POST',
-		            body: JSON.stringify(content),
-		            headers: {
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin' : '*',
-                    'Access-Control-Allow-Methods' : 'DELETE, POST, GET, OPTIONS',
-                    'Access-Control-Allow-Headers' : 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'
-		            }
-		        });
-            setTimeout(function(){
-              window.location.reload()
-            }, 2000);
+          UploadFile.update(request, content, function () {
+                console.log('fileName is added to the dataBase');
+          });
+        
       }
   });
   response.redirect('/accueil');
