@@ -1,6 +1,9 @@
 
 
-![Image of Yaktocat](https://storagecloudxx.blob.core.windows.net/5-stanislas/5_clouds.png)
+
+<p align="center">
+  <img src="https://storagecloudxx.blob.core.windows.net/5-stanislas/5_clouds.png" alt="Sublime's custom image"/>
+</p>
 
 # xCloud
 
