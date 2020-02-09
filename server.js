@@ -318,7 +318,7 @@ app.post('/file-upload', (request, response) => {
         let dateTime = date+' '+time;
         let tmpContainer = request.session.user.id+'-'+request.session.user.last_name;
           await executeUpload('D:\\local\\Temp\\'+fileUploaded, tmpContainer.toLowerCase());
-          const url = blobService.getUrl(request.session.user.id+'-'+request.session.user.last_name, request.session.user.id+'_'+file.name);
+          const url = blobService.getUrl(tmpContainer.toLowerCase(), request.session.user.id+'_'+file.name);
           let content = {
             fileName: file.name,
             containerName: tmpContainer.toLowerCase(),
