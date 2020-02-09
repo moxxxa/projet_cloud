@@ -1,6 +1,6 @@
 
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://storagecloudxx.blob.core.windows.net/5-stanislas/5_clouds.png)
 
 # xCloud
 
