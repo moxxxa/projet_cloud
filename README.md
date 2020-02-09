@@ -8,6 +8,8 @@ Le documentation du projet : https://docs.google.com/document/d/13qyA8Ne7cLA5rd7
 
 
 Déployer le projet :
+
+
 1 : Cloner le projet depuis github : https://github.com/moxxxa/projet_cloud.git
 
 
