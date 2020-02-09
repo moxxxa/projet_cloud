@@ -1,3 +1,7 @@
+
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 # xCloud
 
 XCloud a pour vocation de vous offrir une solution de stockage pour vos fichiers où que vous soyez.
