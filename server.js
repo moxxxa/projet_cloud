@@ -316,11 +316,12 @@ app.post('/file-upload', (request, response) => {
         let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
         let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
         let dateTime = date+' '+time;
-          await executeUpload('D:\\local\\Temp\\'+fileUploaded, request.session.user.id+'-'+request.session.user.last_name);
+        let tmpContainer = request.session.user.id+'-'+request.session.user.last_name;
+          await executeUpload('D:\\local\\Temp\\'+fileUploaded, tmpContainer.toLowerCase());
           const url = blobService.getUrl(request.session.user.id+'-'+request.session.user.last_name, request.session.user.id+'_'+file.name);
           let content = {
             fileName: file.name,
-            containerName: request.session.user.id+'-'+request.session.user.last_name,
+            containerName: tmpContainer.toLowerCase(),
             userId: request.session.user.id,
             date: dateTime,
             url: url
