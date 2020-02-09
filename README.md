@@ -29,7 +29,7 @@ node server.js || npm start
 
 4 : Facultatif : Vous pouvez configurer Jenkins présent sur votre environnement pour configurer le déploiement continue.
 
-4 : Entrez ensuite dans le fichier config/db js les identifiants de connexion au serveur my Sql. Installez MysqlWorkbench puis connectez-vous à votre base de données.
+5 : Entrez ensuite dans le fichier config/db js les identifiants de connexion au serveur my Sql. Installez MysqlWorkbench puis connectez-vous à votre base de données.
 
-5 : Vous pourrez ensuite accéder au projet en accédant l'URL de la ressource web app azure précédemment créé.
+6 : Vous pourrez ensuite accéder au projet en accédant l'URL de la ressource web app azure précédemment créé.
 
