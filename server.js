@@ -327,8 +327,9 @@ app.post('/file-upload', (request, response) => {
             url: url
           }
           UploadFile.update(request, content, function () {
-            console.log('fileName is added to the dataBase');
+                console.log('fileName is added to the dataBase');
           });
+        
       }
   });
   response.redirect('/accueil');
