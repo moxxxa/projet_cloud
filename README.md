@@ -13,7 +13,7 @@ Vous trouverez également un exemple de projet actuellement en ligne.
 
 Adresse du site public : https://cloudxxappservice.azurewebsites.net/
 
-Le documentation du projet : https://docs.google.com/document/d/13qyA8Ne7cLA5rd7EzKQJ4Tlpopohpyc5uhkp7tCx0YM/edit?usp=sharing
+La documentation du projet : https://docs.google.com/document/d/13qyA8Ne7cLA5rd7EzKQJ4Tlpopohpyc5uhkp7tCx0YM/edit?usp=sharing
 
 
 ### Déployer le projet :
