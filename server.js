@@ -60,6 +60,7 @@ app.get('/email-update', (req, res) => {
     res.render('email-update', {})
 });
 
+
 app.get('/logout', (req, res) => {
     req.session.email = undefined
     res.redirect('/')
